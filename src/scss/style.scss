@@ -5,6 +5,7 @@
 }
 
 body {
+   margin: 0;
    color:white;
    font-family: "cuprum",sans-serif;
    font-size: 18px;
@@ -15,6 +16,10 @@ a {
    color: white;
    text-decoration: none;
    font-family: "cuprum",sans-serif;
+}
+
+button {
+   padding: 0;
 }
 
 input {
@@ -30,18 +35,20 @@ input::-webkit-input-placeholder {
    color: white; 
 }
 
-.container {
-   border: 5px solid yellow;
-   max-width: 960px;
-   padding-left: 10px;
-   padding-right: 10px;
-   margin: 0 auto;
-}
-
 input:focus {
    outline: none;
    background-color: white;
    color: black;
 }
+
+.container {
+   max-width: 960px;
+   width: 100%;
+   padding-left: 10px;
+   padding-right: 10px;
+   margin: 0 auto;
+}
+
+
    
  

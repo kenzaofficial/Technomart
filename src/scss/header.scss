@@ -1,14 +1,19 @@
 .header {
+   background-color: aqua;
+   min-height: 300px;
+   background:#63A63E url(/src/img/header.png) top;
    &-top {
+      .container {
       display:flex;
-      justify-content: center;
+      justify-content: space-between;
+      margin-bottom: 45px;
       align-items: center;
       background-color: #293449;
+      }
       &__logo {
          position: relative;
          max-width: 220px;
          width: 100%;
-        
          padding-top: 10px;
          padding-bottom: 7px;
          text-align: center;
@@ -27,7 +32,6 @@
          }
       }
       &__search {
-         padding-left: 15px;
          display: inline-block;
          &:hover {
           .header-top__search-icon {
@@ -55,8 +59,7 @@
             }
          }
       } 
-      .shop-control {
-         &__bookmarks { // как выровнять по вертикале иконку закладки?
+      &__bookmarks { // как выровнять по вертикале иконку закладки?
             padding: 9px 20px;
             margin-right: 20px;
             svg {
@@ -73,7 +76,7 @@
             }
          }    
 
-         &__basket {
+      &__basket {
             margin-right: 25px;
             padding: 9px 20px;   
             svg{
@@ -91,7 +94,7 @@
             }
          }
 
-         &__order {
+      &__order {
             display: inline-block;
             min-width: 150px;
             padding: 9px 20px;
@@ -103,7 +106,79 @@
               color: #B1D29E;
               background-color: #63A63E;
             }
-         }
       }
    }
+      &-middle {
+         display: flex;
+         align-items: flex-start;
+         &__description {
+            font-family: "Cuprum-italic", sans-serif;
+            margin: 0;
+            margin-right: 90px;
+            padding-left: 30px;
+            padding-bottom: 5px;
+            max-width: 230px;
+            width: 100%;
+            color: black;
+            font-size: 16px;
+            line-height: 23px;
+
+         }
+
+         &__contacts {
+            text-align: center;
+            margin-right: 70px;
+            .header-middle__telephone {
+               display: inline-block;
+               margin-bottom: 5px;
+               min-width: 270px;
+               padding: 4px 11px 5px 40px;
+               color: black;
+               font-size: 21px;
+               line-height: 30px;
+               font-weight: 700;
+               letter-spacing: 0.3px;
+               border: 3px solid white;
+               background: url(/src/img/icon-phone.svg) no-repeat;
+               background-position: 35px ;
+            }
+
+            address {
+               font-size: 14px;
+               line-height: 24px;
+               font-style: normal;
+               color: #32425C;
+               color: #63A63E;
+            }
+         }
+
+         &__button {
+            font-family: "Cuprum",sans-serif;
+            font-size: 21px;
+            line-height: 21px;
+            background: white;
+            outline: none;
+            border: none;
+            cursor: pointer;
+
+         }
+
+         &__login {
+            margin-right: 10px;
+            padding:13px 29px 11px 17px;
+            
+            svg {
+               margin-right: 5px;
+              
+            } 
+         } 
+
+         &__registration {
+            padding:13px 24px 11px 24px;
+         }
+
+      }
+
 }
+   
+  
