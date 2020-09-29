@@ -1,0 +1,47 @@
+@import "header";
+@import  "fonts";
+
+* { box-sizing: border-box;
+}
+
+body {
+   color:white;
+   font-family: "cuprum",sans-serif;
+   font-size: 18px;
+   line-height: 24px;
+}
+
+a {
+   color: white;
+   text-decoration: none;
+   font-family: "cuprum",sans-serif;
+}
+
+input {
+   padding:9px 5px;
+   font-family: "cuprum",sans-serif;
+   font-size: 18px;
+   line-height: 24px;
+   color: white;
+   background-color: transparent;
+   border: none;
+}
+input::-webkit-input-placeholder {
+   color: white; 
+}
+
+.container {
+   border: 5px solid yellow;
+   max-width: 960px;
+   padding-left: 10px;
+   padding-right: 10px;
+   margin: 0 auto;
+}
+
+input:focus {
+   outline: none;
+   background-color: white;
+   color: black;
+}
+   
+ 
