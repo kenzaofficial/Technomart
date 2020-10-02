@@ -1,0 +1,16 @@
+.main {
+   .container {
+      .main-goods {
+         color: black;
+         background: url(/src/img/goods.png) top;
+         min-height: 500px;
+         &__title {
+            font-size: 30px;
+            line-height: 30px;
+            font-weight: 400;
+            text-transform: uppercase;
+         }
+
+      }
+   }
+}

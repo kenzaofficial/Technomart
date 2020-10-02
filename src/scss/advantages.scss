@@ -1,0 +1,99 @@
+main {
+  // background: url(/src/img/main.png) no-repeat top center; 
+   .container {
+      .main-advantages {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr ;
+      grid-template-rows: none ;
+      grid-gap: 20px;
+      margin-bottom:60px ;
+      &__bg-1 {
+         background: #FFBF47 url(/src/img/icon-1.svg);
+      }
+      &__bg-2 {
+         background: #3BBCE3 url(/src/img/icon-2.svg);
+      }
+      &__bg-3 {
+         background: #DC91D8 url(/src/img/icon-3.svg);
+      }
+      &__bg-4 {
+         background: #8ED78F url(/src/img/icon-4.svg);
+      }
+      &__bg-5 {
+         background: #FFC047 url(/src/img/icon-5.svg);
+      }
+      &-item {
+         max-width: 300px;
+         width: 100%;
+         padding: 21px;
+         background-position: 85%;
+         background-repeat: no-repeat;
+
+         &__title {
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 15px;
+         }
+
+         &__btn {
+            display: inline-block;
+            padding: 10px 5px;
+            max-width: 135px;
+            width: 100%;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+            &:hover {                //ка кправильно подобрать цвет ховера кнопки если в макете нет такой информации?
+                opacity: 0.8;
+              
+            }
+            &:active {
+              box-shadow: inset 0 0 8px -5px #666666;
+            }
+         }
+      
+         &__btn-bg-1 {
+            background-color: #FFD27E;  
+         }
+         &__btn-bg-2 {
+            background-color:#75D0EB;
+         } 
+         &__btn-bg-3 {
+            background-color:#EDC9EC;
+         }  
+         &__btn-bg-4 {
+            background-color:#C8EBC8;
+         }  
+         &__btn-bg-5 {
+            background-color:#FFE0A4;
+         }   
+    }
+   
+    &-slider {
+      
+         grid-column: span 2;
+         grid-row: span 2;
+         max-width: 620px;
+         width:100%;
+         height: 266px;
+         padding: 23px;
+         background: url(/src/img/features__slider-1.jpg);
+         &__title {
+            margin-bottom: 5px;
+            font-size: 36px;
+            line-height: 36px;
+            text-transform: uppercase;
+            letter-spacing: 1px;         
+         }
+         
+         &__subtitle {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 400;
+         }
+    }
+  }
+}
+}

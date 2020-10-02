@@ -1,6 +1,7 @@
 .header {
    background-color: #F3F7F8;
    padding-bottom: 60px;
+   margin-bottom: 60px;
    &-top {
       .container {
       display:flex;
@@ -163,17 +164,28 @@
             outline: none;
             border: none;
             cursor: pointer;
-
+            &:hover {
+               color: red;
+            }
+            &:active {
+               color: #C5C5C5;
+            }
          }
 
          &__login {
             margin-right: 10px;
             padding:13px 29px 11px 17px;
+            &:hover {
+               svg {
+                  opacity: 0.5; 
+                  color: green;//почему color не меняется при ховере ??
+               }
+            }
             
             svg {
                margin-right: 5px;
-              
             } 
+            
          } 
 
          &__registration {
