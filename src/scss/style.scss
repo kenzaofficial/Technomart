@@ -20,7 +20,7 @@ a {
    font-family: "cuprum",sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6,ul {
+h1,h2,h3,h4,h5,h6,ul,p {
    padding: 0;
    margin: 0;
 }
@@ -61,6 +61,8 @@ input:focus {
    margin: 0 auto;
 }
 
-
+.hidden {
+   visibility: hidden;
+}
    
  

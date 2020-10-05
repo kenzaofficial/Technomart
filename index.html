@@ -4,7 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Styleguide</title>
+   <title>index</title>
    <link rel="stylesheet" href="/build/style.css">
 </head>
 
@@ -56,7 +56,7 @@
          </div>
          <div class="header-nav">
             <ul class="header-nav__list">
-               <li><a class="header-nav__link new" href="#">Главная </a></li>
+               <li><a class="header-nav__link header-nav__link--new" href="#">Главная </a></li>
                <li><a class="header-nav__link" href="#">Компания</a></li>
                <li><a class="header-nav__link" href="#">Каталог</a></li>
                <li><a class="header-nav__link" href="#">Новости</a></li>
@@ -83,9 +83,9 @@
                <h5 class="main-advantages-item__title">Техника</h5>
                <a class="main-advantages-item__btn main-advantages-item__btn-bg-3">Для стройки</a>
             </div>
-            <div class="main-advantages-slider">
-               <h4 class="main-advantages-slider__title">Перфораторы</h4>
-               <h5 class="main-advantages-slider__subtitle">Настоящие мужские игрушки</h5>
+            <div class="main-advantages__slider">
+               <h4 class="main-advantages__slider-title">Перфораторы</h4>
+               <h5 class="main-advantages__slider-subtitle">Настоящие мужские игрушки</h5>
             </div>
             <div class="main-advantages-item main-advantages__bg-4">
                <h5 class="main-advantages-item__title">Скидки 50%</h5>
@@ -98,20 +98,103 @@
          </div>
          <section class="main-goods">
             <div class="main-goods__gallery-header">
-            <h4 class="main-goods__title">Популярные товары:</h4>
-            <a class="main-goods__button">
-               Все популярные товары
-            </a>
+               <h4 class="main-goods__title">Популярные товары:</h4>
+               <a class="main-goods__button" href="#">
+                  Все популярные товары
+               </a>
             </div>
-            <div class="main-goods__gallery-content">
-               <div class="main-goods__gallery-img">
-                  <img src="/src/img/BFG-9000.jpg">
+            <div class="main-goods__gallery">
+               <div class="main-goods__gallery-item">
+                  <div class="main-goods__gallery-img">
+                     <img src="/src/img/BFG-9000.jpg">
+                  </div>
+                  <p class="main-goods__gallery-text">Перфоратор BOSCH BFG 9000</p>
+                  <span class="main-goods__gallery-old-price">32500 Р.</span>
+                  <span class="main-goods__gallery-new-price">25500 Р.</span>
+               </div>
+               <div class="main-goods__gallery-item">
+                  <div class="main-goods__gallery-img">
+                     <img src="/src/img/BFG-3000.jpg">
+                  </div>
+                  <p class="main-goods__gallery-text">Перфоратор BOSCH BFG 3000</p>
+                  <span class="main-goods__gallery-old-price">22500 Р.</span>
+                  <span class="main-goods__gallery-new-price">15500 Р.</span>
+               </div>
+               <div class="main-goods__gallery-item">
+                  <div class="main-goods__gallery-img">
+                     <img src="/src/img/BFG-6000.jpg">
+                  </div>
+                 
+                     <p class="main-goods__gallery-text">Перфоратор BOSCH BFG 6000</p>
+                     <span class="main-goods__gallery-old-price">30500 Р. </span>
+                     <span class="main-goods__gallery-new-price">25500 Р.</span>
+                  
+
+               </div>
+               <div class="main-goods__gallery-item">
+                  <div class="main-goods__gallery-img">
+                     <img src="/src/img/BFG-2000.jpg">
+                  </div>
+                  <p class="main-goods__gallery-text">Перфоратор BOSCH BFG 2000</p>
+                  <span class="main-goods__gallery-old-price hidden">00000 Р.</span>
+                  <span class="main-goods__gallery-new-price">12500 Р.</span>
+               </div>
+            </div>
+            <div class="main-goods__gallery-header">
+               <h4 class="main-goods__title">Популярные проиозводители:</h4>
+               <a class="main-goods__button" href="#">
+                  Все проиозводители
+               </a>
+            </div>
+            <div class="main-goods__gallery">
+               <div class="main-goods__gallery-item main-goods__gallery-item--brand">
+                  <div class="main-goods__gallery-img main-goods__gallery-img--brand">
+                     <img src="/src/img/bosch.png">
+                  </div>
+               </div>
+               <div class="main-goods__gallery-item main-goods__gallery-item--brand">
+                  <div class="main-goods__gallery-img main-goods__gallery-img--brand">
+                     <img src="/src/img/Makita.png">
+                  </div>
+               </div>
+               <div class="main-goods__gallery-item main-goods__gallery-item--brand">
+                  <div class="main-goods__gallery-img main-goods__gallery-img--brand">
+                     <img src="/src/img/DeWALT.png">
+                  </div>
+               </div>
+               <div class="main-goods__gallery-item main-goods__gallery-item--brand">
+                  <div class="main-goods__gallery-img main-goods__gallery-img--brand">
+                     <img src="/src/img/Interskol.png">
+                  </div>
+               </div>
+               <div class="main-goods__gallery-item main-goods__gallery-item--brand">
+                  <div class="main-goods__gallery-img main-goods__gallery-img--brand">
+                     <img src="/src/img/Hitachi.png">
+                  </div>
+               </div>
+               <div class="main-goods__gallery-item main-goods__gallery-item--brand">
+                  <div class="main-goods__gallery-img main-goods__gallery-img--brand">
+                     <img src="/src/img/LG.png">
+                  </div>
+               </div>
+               <div class="main-goods__gallery-item main-goods__gallery-item--brand">
+                  <div class="main-goods__gallery-img main-goods__gallery-img--brand">
+                     <img src="/src/img/AEG.png">
+                  </div>
+               </div>
+               <div class="main-goods__gallery-item main-goods__gallery-item--brand">
+                  <div class="main-goods__gallery-img main-goods__gallery-img--brand">
+                     <img src="/src/img/Metabo.png">
+                  </div>
                </div>
             </div>
          </section>
       </div>
-
+      <section class="service">
+         <h5 class="service__title"></h5>
+         <p class="service__subtitle"></p>
+         <!--как назвать и образовать следующие блоки ? их должно быть три или нарисовать один (доставка)-->
+      </section>
    </main>
 </body>
-
 </html>

@@ -1,4 +1,4 @@
-main {
+.main {
   // background: url(/src/img/main.png) no-repeat top center; 
    .container {
       .main-advantages {
@@ -71,8 +71,7 @@ main {
          }   
     }
    
-    &-slider {
-      
+    &__slider {
          grid-column: span 2;
          grid-row: span 2;
          max-width: 620px;
