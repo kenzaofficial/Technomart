@@ -1,14 +1,98 @@
 .header {
    background-color: #F3F7F8;
    padding-bottom: 60px;
-   &-top {
-      .container {
-      display:flex;
-      justify-content: space-between;
-      margin-bottom: 45px;
-      align-items: center;
-      background-color: #293449;
+   margin-bottom: 60px;
+   &-middle {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 40px;
+      &__description {
+         font-family: "Cuprum-italic", sans-serif;
+         margin: 0;
+         margin-right: 90px;
+         padding-left: 30px;
+         padding-bottom: 5px;
+         max-width: 230px;
+         width: 100%;
+         color: #EE3643;
+         font-size: 16px;
+         line-height: 23px;
+
       }
+
+      &__contacts {
+         text-align: center;
+         margin-right: 70px;
+         .header-middle__telephone {
+            display: inline-block;
+            margin-bottom: 5px;
+            min-width: 270px;
+            padding: 4px 11px 5px 40px;
+            color: #EE3643;
+            font-size: 21px;
+            line-height: 30px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            border: 3px solid white;
+            background: url(/src/img/icon-phone.svg) no-repeat;
+            background-position: 35px ;
+         }
+
+         address {
+            font-size: 14px;
+            line-height: 24px;
+            font-style: normal;
+            color: #32425C;
+            color: #63A63E;
+         }
+      }
+
+      &__button {
+         font-family: "Cuprum",sans-serif;
+         font-size: 21px;
+         line-height: 21px;
+         background: white;
+         outline: none;
+         border: none;
+         cursor: pointer;
+         &:hover {
+            color: red;
+         }
+         &:active {
+            color: #C5C5C5;
+
+            }
+         }
+      }
+
+      &__login {
+         margin-right: 10px;
+         padding:13px 29px 11px 17px;
+         &:hover {
+            svg {   
+               fill: #3D546F;//почему color не меняется при ховере ??
+            }
+         }
+         
+         svg {
+            margin-right: 5px;
+         } 
+         
+      } 
+
+      &__registration {
+         padding:13px 24px 11px 24px;
+      }
+   }
+
+.header-top {
+   .container {
+   display:flex;
+   justify-content: space-between;
+   margin-bottom: 45px;
+   align-items: center;
+   background-color: #293449;
+   }
       &__logo {
          position: relative;
          max-width: 220px;
@@ -110,101 +194,29 @@
             }
       }
    }
-      &-middle {
-         display: flex;
-         align-items: flex-start;
-         margin-bottom: 40px;
-         &__description {
-            font-family: "Cuprum-italic", sans-serif;
-            margin: 0;
-            margin-right: 90px;
-            padding-left: 30px;
-            padding-bottom: 5px;
-            max-width: 230px;
-            width: 100%;
-            color: #EE3643;
-            font-size: 16px;
-            line-height: 23px;
 
-         }
-
-         &__contacts {
-            text-align: center;
-            margin-right: 70px;
-            .header-middle__telephone {
-               display: inline-block;
-               margin-bottom: 5px;
-               min-width: 270px;
-               padding: 4px 11px 5px 40px;
-               color: #EE3643;
-               font-size: 21px;
-               line-height: 30px;
-               font-weight: 700;
-               letter-spacing: 0.3px;
-               border: 3px solid white;
-               background: url(/src/img/icon-phone.svg) no-repeat;
-               background-position: 35px ;
-            }
-
-            address {
-               font-size: 14px;
-               line-height: 24px;
-               font-style: normal;
-               color: #32425C;
-               color: #63A63E;
-            }
-         }
-
-         &__button {
-            font-family: "Cuprum",sans-serif;
-            font-size: 21px;
-            line-height: 21px;
-            background: white;
-            outline: none;
-            border: none;
-            cursor: pointer;
-
-         }
-
-         &__login {
-            margin-right: 10px;
-            padding:13px 29px 11px 17px;
-            
-            svg {
-               margin-right: 5px;
-              
-            } 
-         } 
-
-         &__registration {
-            padding:13px 24px 11px 24px;
-         }
-
+.header-nav {
+   padding-left: 28px;
+   padding-right: 30px;
+   background-color: #32425C;
+   border-bottom: 5px solid #293449;
+   
+   &__list {
+      display: flex;
+      justify-content: space-between;
+   }
+   &__link {
+      display: inline-block;
+      color:white;
+      padding: 17px 28px 14px;
+      &:hover {
+         background-color: #293449;
       }
-
-      &-nav {
-         padding-left: 28px;
-         padding-right: 30px;
-         background-color: #32425C;
-         border-bottom: 5px solid #293449;
-         
-         &__list {
-            display: flex;
-            justify-content: space-between;
-         }
-         &__link {
-            display: inline-block;
-            color:white;
-            padding: 17px 28px 14px;
-            &:hover {
-               background-color: #293449;
-            }
-            &:active {
-               background-color: #1D2739;
-               color: #8E939C;
-            }
-         }
+      &:active {
+         background-color: #1D2739;
+         color: #8E939C;
       }
+   }
 }
    
   
