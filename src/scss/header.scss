@@ -3,14 +3,14 @@
    padding-bottom: 60px;
    margin-bottom: 60px;
    .header-top {
-   .container {
-   display:flex;
-   justify-content: space-between;
-   margin-bottom: 45px;
-   align-items: center;
-   background-color: #293449;
-   
-      &__logo {
+      .container {
+         display:flex;
+         justify-content: space-between;
+         margin-bottom: 45px;
+         align-items: center;
+         background-color: #293449;
+    }
+      .header-top__logo {
          position: relative;
          max-width: 220px;
          width: 100%;
@@ -31,7 +31,7 @@
             left: 0;
          }
       }
-      &__search {
+      .header-top__search {
          display: inline-block;
          &:hover {
           .header-top__search-icon {
@@ -59,7 +59,7 @@
             }
          }
       } 
-      &__bookmarks {
+      .header-top__bookmarks {
             padding: 9px 20px;
             margin-right: 20px;
             svg {
@@ -78,7 +78,7 @@
             }
          }    
 
-      &__basket {
+      .header-top__basket {
             margin-right: 25px;
             padding: 9px 20px;   
             svg {
@@ -97,7 +97,7 @@
             }
          }
 
-      &__order {
+      .header-top__order {
             display: inline-block;
             min-width: 150px;
             padding: 9px 20px;
@@ -110,32 +110,8 @@
               background-color: #63A63E;
             }
       }
-   }
-}
-.header-nav {
-   padding-left: 28px;
-   padding-right: 30px;
-   background-color: #32425C;
-   border-bottom: 5px solid #293449;
    
-   &__list {
-      display: flex;
-      justify-content: space-between;
-   }
-   &__link {
-      display: inline-block;
-      color:white;
-      padding: 17px 28px 14px;
-      &:hover {
-         background-color: #293449;
-      }
-      &:active {
-         background-color: #1D2739;
-         color: #8E939C;
-      }
-   }
- }
-} 
+  }
    &-middle {
       display: flex;
       align-items: flex-start;
@@ -212,8 +188,34 @@
       &__registration {
          padding:13px 24px 11px 24px;
       }
-      }
+   }
+   .header-nav {
+     padding-left: 28px;
+     padding-right: 30px;
+     background-color: #32425C;
+     border-bottom: 5px solid #293449;
 
+     &__list {
+       display: flex;
+       justify-content: space-between;
+     }
+
+     &__link {
+       display: inline-block;
+       color: white;
+       padding: 17px 28px 14px;
+
+       &:hover {
+         background-color: #293449;
+       }
+
+       &:active {
+         background-color: #1D2739;
+         color: #8E939C;
+       }
+     }
+   }
+}
       
    
 
