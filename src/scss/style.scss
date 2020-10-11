@@ -2,13 +2,19 @@
 @import  "fonts";
 @import  "advantages";
 @import "goods";
+@import  "services";
+@import  "features";
+@import "footer-top";
+@import  "footer-middle";
+@import "footer-bottom";
 
 * { box-sizing: border-box;
 }
 
 body {
+   background: url(/src/img/Index.jpg) top no repeat;
    margin: 0;
-   color:white;
+   color:black;
    font-family: "cuprum",sans-serif;
    font-size: 18px;
    line-height: 24px;
@@ -18,6 +24,7 @@ a {
    color: white;
    text-decoration: none;
    font-family: "cuprum",sans-serif;
+   cursor: pointer;
 }
 
 h1,h2,h3,h4,h5,h6,ul,p {
