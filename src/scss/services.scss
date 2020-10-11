@@ -1,16 +1,16 @@
 .service {
   .container {
     background: url(/src/img/services__slider-1.png) no-repeat;
-    background-position: bottom -30% right;
+    background-position: bottom -45% right;
   }
-  padding-top: 65px;
-  padding-bottom: 100px;
+  padding-top: 37px;
+  padding-bottom: 65px;
   margin-bottom: 70px;
   background: #F1F5F7 ;
   color: black;
   
   &__text-wrapper {
-    margin-bottom: 20px;
+    margin-bottom: 70px;
 
     .service__title {
       margin-bottom: 25px;
@@ -35,7 +35,6 @@
     .service__option {
       position: relative;
       margin-right: 80px;
-      padding-top: 50px;
       max-width: 240px;
       width: 100%;
       font-size: 21px;

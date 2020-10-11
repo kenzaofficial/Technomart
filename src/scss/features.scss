@@ -2,9 +2,8 @@
   .container {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 70px;
   }
-  background: url(/src/img/constacts.png) top no-repeat;
-  min-height: 500px;
   &__column-left {
      width: 50%;
   }
