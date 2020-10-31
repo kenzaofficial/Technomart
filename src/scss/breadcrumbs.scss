@@ -1,0 +1,27 @@
+.breadcrumbs {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 13px;
+  line-height: 18px;
+  &__item {
+    display: inline-block;
+    font-family: "Pt-Sans",
+      sans-serif;
+    position: relative;
+    padding-right: 25px;
+    margin-right: 15px;
+    color: black;
+    text-transform: uppercase;
+    
+    
+    &::after {
+      position: absolute;
+      content: url(/src/img/icon-right-small.png);
+      right: 0;
+    }
+  }
+}
+
+
+

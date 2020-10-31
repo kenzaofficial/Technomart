@@ -1,11 +1,28 @@
 @import "header";
 @import  "fonts";
+@import  "advantages";
+@import "goods";
+@import  "services";
+@import  "features";
+@import "footer-top";
+@import  "footer-middle";
+@import "footer-bottom";
+@import  "breadcrumbs";
+@import  "top-row";
+@import  "range-filter";
+@import  "content";
+@import  "checkbox";
+@import  "radio";
+@import  "pagination";
+@import "tool-description";
+@import  "modal-basket";
 
 * { box-sizing: border-box;
 }
 
 body {
-   color:white;
+   margin: 0;
+   color:black;
    font-family: "cuprum",sans-serif;
    font-size: 18px;
    line-height: 24px;
@@ -15,10 +32,27 @@ a {
    color: white;
    text-decoration: none;
    font-family: "cuprum",sans-serif;
+   cursor: pointer;
+}
+
+h1,h2,h3,h4,h5,h6,ul,p {
+   font-weight: 400;
+   padding: 0;
+   margin: 0;
+}
+
+li {
+   list-style-type:none;
+   
+}
+
+button, input {
+   margin: 0;
+   padding: 0;
 }
 
 input {
-   padding:9px 5px;
+   padding:7px 5px;
    font-family: "cuprum",sans-serif;
    font-size: 18px;
    line-height: 24px;
@@ -30,18 +64,64 @@ input::-webkit-input-placeholder {
    color: white; 
 }
 
-.container {
-   border: 5px solid yellow;
-   max-width: 960px;
-   padding-left: 10px;
-   padding-right: 10px;
-   margin: 0 auto;
-}
-
 input:focus {
    outline: none;
    background-color: white;
    color: black;
 }
+
+.container {
+   max-width: 960px;
+   width: 100%;
+   padding-left: 10px;
+   padding-right: 10px;
+   margin: 0 auto;
+}
+
+.hidden {
+   visibility: hidden;
+}
    
+.new {
+   &::before {
+      content: "new";
+      position: absolute;
+      top: 4px;
+      right: -23px;
+      height: 0;
+      border-bottom: 30px solid #EE3643;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      transform: rotate(45deg);
+      font-size: 14px;
+      font-weight: 400;
+      color: white;
+      display: flex;
+      text-transform: uppercase;
+   
+   }
+
+}
  
+
+.title {
+   padding-left: 30px;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   font-size: 30px;
+   line-height: 30px;
+   font-weight: 400;
+   text-transform: uppercase;
+   background-color: #F2F6F8;
+}
+
+
+
+  h6{
+   margin-bottom: 10px;
+   font-family: PT-Sans;
+   font-size: 17px;
+   line-height: 30px;
+   text-transform: uppercase;
+   font-weight: 700;
+ }

@@ -1,0 +1,24 @@
+.content {
+   padding-top: 17px;
+   display: flex;
+   padding-bottom: 60px;
+}
+
+.column-left {
+   margin-right: 20px;
+   max-width:220px;
+   width: 100%;
+}
+
+
+.column-right {
+   max-width: 700px;
+   width: 100%;
+   .top-row {
+      margin-bottom: 30px;
+   }
+
+   .main-goods__gallery {
+      margin-bottom: 53px;
+   }
+}
