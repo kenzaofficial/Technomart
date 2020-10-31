@@ -1,0 +1,30 @@
+.tool-description {
+   .container {
+ 
+  
+   }
+
+   padding-top: 70px;
+   padding-bottom: 70px;
+   background: #F1F5F7;
+   color: black;
+
+   &__text-wrapper {
+
+     .tool-description__title {
+       margin-bottom: 25px;
+       font-size: 30px;
+       line-height: 30px;
+       font-weight: 400;
+       text-transform: uppercase;
+     }
+
+     .tool-description__subtitle {
+       padding-right: 30px;
+       font-family: "Pt-Sans", sans-serif;
+       font-size: 13px;
+       line-height: 24px;
+       font-weight: 400;
+     }
+   }
+}

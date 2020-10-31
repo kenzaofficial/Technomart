@@ -50,3 +50,13 @@
   margin-left: 60px;
   line-height: 18px;
 }
+
+
+.footer-top__link:hover, .footer-middle__link:hover {
+ text-decoration: underline;
+}
+
+.footer-top__link:active, .footer-middle__link:active {
+  opacity: 0.5;
+  text-decoration: none;
+}
