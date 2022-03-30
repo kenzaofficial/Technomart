@@ -1,0 +1,17 @@
+.footer-middle {
+   display: flex;
+   &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      max-width: 525px;
+      width: 100%;
+      margin-left: auto;
+      
+
+   }
+   &__link {
+      color: #FFDA96;
+     
+   }
+}   
+  

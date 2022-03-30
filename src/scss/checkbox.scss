@@ -1,0 +1,117 @@
+.checkbox,
+.radio {
+  padding-top: 15px;
+  font-family: PT-Sans, sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-top: 1px solid lightgreen;
+
+  &__title {
+    margin-bottom: 20px;
+    font-family: PT-Sans;
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+
+.checkbox__list,
+.radio__list {
+  margin-bottom: 29px;
+
+  li {
+    margin-bottom: 20px;
+  }
+}
+
+.checkbox__item,
+.radio__item {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+
+  input {
+    display: none;
+  }
+
+  
+
+  .checkbox__indicator {
+    position: absolute;
+    border: 2px solid #C5C5C5;
+    border-radius: 3px;
+    width: 23px;
+    height: 23px;
+    border-radius: 3px;
+    left: 0;
+    top: -2px;
+    z-index: -10; // как убрать эту хуйню под самый нижний слой если это возможжно или none влепить
+  }
+
+
+}
+
+
+.checkbox__item input:checked+.checkbox__indicator::before {
+  content: url(/src/img/checkbox-on.svg);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  z-index: 20; // как это сделоать блять
+
+}
+
+
+
+//radio only
+.radio {
+   padding-bottom: 10px;
+}
+
+.radio__title {
+   margin-bottom: 24px;
+}
+.radio__indicator {
+  position: absolute;
+  border: 3px solid #C5C5C5;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  left: 0;
+  top: -2px;
+}
+
+.radio__list li {
+   margin-bottom: 22px;
+}
+
+
+.radio__item input:checked+.radio__indicator::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background-color: #C5C5C5;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+  z-index: 20; // как это сделоать блять
+
+}
+
+.column-left__btn {
+   padding: 10px 10px;
+   width: 100%;
+   border: 1px solid black;
+   text-transform: uppercase;
+   font-family: PT-Sans,sans-serif;
+   font-size: 13px;
+   line-height: 16px;
+   background-color: white;
+   cursor: pointer;
+}
+
+

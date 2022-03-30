@@ -1,0 +1,91 @@
+.top-row {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   padding-left: 19px;
+   padding-top: 12px;
+   padding-bottom: 8px;   
+   background-color: #F7F3EC;
+   border-radius: 3px;
+     text-transform: uppercase;
+      font-family: "Pt-Sans",
+      sans-serif;
+      font-weight:400;
+      font-size: 13px;
+      line-height: 18px;
+   &__title {
+      font-size: 13px;
+      padding-right: 105px; // это нормально задавать такой паддинг?
+      
+     
+   }
+   &__sorting-wrapper {
+      margin-left: -10px;
+   }
+  
+   &__sorting {
+      border-bottom: 1px dotted red;
+      font-family: Pt-Sans,sans-serif;
+      color: black;
+      margin-left: 0;
+      color: #ADABA6;
+      &:hover {
+         color: black;
+         border-bottom: 1px solid red;
+      }
+      &:nth-child(2) {
+         margin-left: 70px;
+      }
+      &:last-child {
+         margin-left:63px;
+      }
+   }
+   &__btn-controls {
+      
+      display: flex;
+      justify-content: space-between;
+      max-width: 45px;
+      width: 100%;
+      margin-right: 15px;
+   }
+
+   &__up-btn {
+     width: 0;
+     height: 0;
+     border-left: 5px solid transparent;
+     border-right: 5px solid transparent;
+     border-bottom: 10px solid #ADABA6;
+     &:hover {
+        border-bottom-color: black;
+     }
+   }
+   &__down-btn {
+     width: 0;
+     height: 0;
+     border-left: 5px solid transparent;
+     border-right: 5px solid transparent;
+     border-top: 10px solid #ADABA6;
+     &:hover {
+       border-top-color: black;
+     }
+   }
+}
+
+
+.top-row__up-btn-active {
+   border-bottom-color: red;
+   
+}
+
+.top-row__sorting-active {
+   border: none;
+   color: red;
+}
+
+
+
+
+
+
+
+  
